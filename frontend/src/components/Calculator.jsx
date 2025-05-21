@@ -37,9 +37,9 @@ export function Calculator() {
 
             <div className="grid grid-cols-4 gap-3" onClick={handleButton}>
                 <button className="btn btn-outline" data-action="clear">C</button>
-                <button className="btn btn-outline" data-action="del">⌫</button>
-                <button className="btn btn-outline" data-action="%">%</button>
-                <button className="btn btn-primary" data-action="/">÷</button>
+                <button className="btn btn-outline " disabled data-action=  "del">⌫</button>
+                <button className="btn btn-outline " disabled data-action=  "%">%</button>
+                <button className="btn btn-primary " data-action="/">÷</button>
 
                 <button className="btn btn-neutral" data-action="7">7</button>
                 <button className="btn btn-neutral" data-action="8">8</button>
