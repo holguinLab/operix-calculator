@@ -24,6 +24,10 @@ export function Calculator() {
         })
     }
 
+    function calcular() {
+        setEstado(eval(estado).toString());
+    }
+
 
 
     return (
@@ -54,7 +58,7 @@ export function Calculator() {
 
                 <button className="btn btn-neutral col-span-2" data-action="0">0</button>
                 <button className="btn btn-neutral" data-action=".">.</button>
-                <button className="btn btn-accent" data-action="=">=</button>
+                <button className="btn btn-accent" data-action="=" onClick={calcular} > =</button>
             </div>
         </div>
     )
