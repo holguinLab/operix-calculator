@@ -3,6 +3,9 @@ import { useState } from "react"
 export function Calculator() {
 
     const [estado , setEstado ] = useState(0)
+    
+    const resultados = {}
+    const ids = 0
 
     const handleButton = (e) =>{
         const action = e.target.dataset.action
@@ -24,8 +27,28 @@ export function Calculator() {
         })
     }
 
+
+    function addOperacionResultadoAside(id,o,r){
+        if(!resultados[id]) {/* si id no esta en resultados o es falso */
+            resultados[id] = {o,r}
+            
+            ids += 1
+        }else{
+            console.log('ID en uso')
+        }
+    }
+
     function calcular() {
         setEstado(eval(estado).toString());
+        const operacion = estado
+        const resultado = eval(estado)
+        console.log(operacion,"->",resultado)
+        
+        addOperacionResultadoAside(ids,operacion,resultado)
+
+
+        console.log(resultados)
+        
     }
 
 

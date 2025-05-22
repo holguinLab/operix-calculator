@@ -2,11 +2,6 @@
 @plugin "daisyui";
 
 
-
-
-
-
-
 @plugin "daisyui/theme" {
   name: "coffee";
   default: false;
