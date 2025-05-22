@@ -43,7 +43,7 @@ export function Calculator() {
 
     return (
         <>
-            <div className="flex justify-center items-start gap-10 mt-10">
+            <div className="flex flex-col lg:flex-row justify-center items-start gap-10 mt-10 px-4">
                 {/* CALCULADORA */}
                 <div className="max-w-sm bg-base-200 rounded-xl shadow-lg p-6">
                     <div
